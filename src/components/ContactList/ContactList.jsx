@@ -1,9 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { delContact } from '../../rudux/contacts/contacts-operations';
+import { delContact } from '../../redux/contacts/contacts-operations';
 import {
   getContacts,
   getFilterValue,
-} from '../../rudux/contacts/contacts-selectors';
+} from '../../redux/contacts/contacts-selectors';
 import s from './ContactList.module.css';
 import Button from '../Button/Button';
 

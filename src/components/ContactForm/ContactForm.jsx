@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import { Report } from 'notiflix/build/notiflix-report-aio';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from '../../rudux/contacts/contacts-operations';
-import { getContacts } from '../../rudux/contacts/contacts-selectors';
+import { addContact } from '../../redux/contacts/contacts-operations';
+import { getContacts } from '../../redux/contacts/contacts-selectors';
 
 import s from './ContactForm.module.css';
 import Button from '../Button/Button';
@@ -26,7 +26,7 @@ function ContactForm() {
     e.preventDefault();
     const contact = {
       name: name,
-      number: number,
+      phone: number,
     };
 
     let isAdded = false;
@@ -65,6 +65,7 @@ function ContactForm() {
       </label>
       <label>
         <input
+          country="US"
           className={s.input}
           type="tel"
           name="number"

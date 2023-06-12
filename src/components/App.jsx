@@ -4,7 +4,7 @@ import Filter from './Filter';
 import ContactList from './ContactList';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchContacts } from 'rudux/contacts/contacts-operations';
+import { fetchContacts } from 'redux/contacts/contacts-operations';
 
 import s from './App.module.css';
 
